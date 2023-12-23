@@ -12,10 +12,9 @@ return {
     n = {
       -- second key is the lefthand side of the map
       -- mappings seen under group name "Buffer"
-      ["<tab>"] = { "<cmd>bdelete<cr>", desc = "Close tab" },
+      ["<leader>x"] = { "<cmd>bdelete<cr>", desc = "Close tab" },
       -- tables with the `name` key will be registered with which-key if it's installed
       -- this is useful for naming menus
-      ["<leader>b"] = { name = "Buffers" },
       -- quick save
       ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
       -- Swith buffer
